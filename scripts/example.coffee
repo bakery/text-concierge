@@ -11,9 +11,9 @@
 module.exports = (robot) ->
   robot.hear /hello/i, (res) ->
     res.send "hello there #{res.message.user.id}"
-    
+
   robot.router.post '/sms/receive', (req, res) ->
-    robot.messageRoom '131894509', "you've got a message #{req.body.payload}"
+    robot.messageRoom '131894509', "you've got a message #{req.body}"
     res.send 'OK'
 
   # robot.hear /badger/i, (res) ->
