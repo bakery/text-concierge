@@ -23,5 +23,4 @@ module.exports = (robot) ->
       console.log(error);
       console.log(response);
     
-    #robot.messageRoom '131894509', message.Body
     res.send 'OK'
