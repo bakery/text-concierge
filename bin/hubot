@@ -5,7 +5,7 @@ set -e
 npm install
 export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH"
 export TELEGRAM_TOKEN="141592160:AAHb9Z-2VY2juyQxR418mzfZy1TtkBPtWXM"
-export TELEGRAM_WEBHOOK="https://text-concierge.herokuapp.com//hubot/telegram/receive"
+export TELEGRAM_WEBHOOK="https://text-concierge.herokuapp.com/hubot/telegram/receive"
 export OWNER_ID="131894509"
 
 exec node_modules/.bin/hubot -a telegram --name "text-concierge" "$@"

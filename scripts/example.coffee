@@ -11,6 +11,10 @@
 module.exports = (robot) ->
   robot.hear /hello/i, (res) ->
     res.send "hello there #{res.message.user.id}"
+    
+  robot.router.post '/sms/receive', (req, res) ->
+    robot.messageRoom '131894509', "you've got a message #{req.body.payload}"
+    res.send 'OK'
 
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
@@ -76,14 +80,7 @@ module.exports = (robot) ->
   #     res.send "Not annoying you right now, am I?"
   #
   #
-  # robot.router.post '/hubot/chatsecrets/:room', (req, res) ->
-  #   room   = req.params.room
-  #   data   = JSON.parse req.body.payload
-  #   secret = data.secret
-  #
-  #   robot.messageRoom room, "I have a secret: #{secret}"
-  #
-  #   res.send 'OK'
+  
   #
   # robot.error (err, res) ->
   #   robot.logger.error "DOES NOT COMPUTE"
