@@ -2,7 +2,7 @@
   "name": "Text Concierge",
   "description": "Get a Twilio number and forward incoming text messages to your Telegram",
   "repository": "https://github.com/thebakeryio/text-concierge",
-  "logo": "placehold.it/512x512",
+  "logo": "https://placehold.it/512x512",
   "keywords": ["sms","twilio","telegram"],
   "website": "https://github.com/thebakeryio/text-concierge",
   "env": {
