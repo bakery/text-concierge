@@ -13,7 +13,7 @@ module.exports = (robot) ->
     res.send "hello there #{res.message.user.id}"
 
   robot.router.post '/sms/receive', (req, res) ->
-    robot.messageRoom '131894509', "you've got a message #{req.body}"
+    robot.messageRoom '131894509', "you've got a message #{JSON.stringify(req.body)}"
     res.send 'OK'
 
   # robot.hear /badger/i, (res) ->
