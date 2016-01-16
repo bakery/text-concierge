@@ -1,0 +1,13 @@
+{
+  "name": "Text Concierge",
+  "description": "Get a Twilio number and forward incoming text messages to your Telegram",
+  "repository": "https://github.com/thebakeryio/text-concierge",
+  "logo": "placehold.it/512x512",
+  "keywords": ["sms","twilio","telegram"],
+  "website": "https://github.com/thebakeryio/text-concierge",
+  "env": {
+    "TELEGRAM_TOKEN": {
+      "description": "Head to https://telegram.me/botfather and use /newbot command to create a new bot. Grab the token that Botfather generates for you and paste it here."
+    }
+  }
+}
