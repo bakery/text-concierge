@@ -12,6 +12,10 @@ module.exports = (robot) ->
   robot.hear /hello/i, (res) ->
     res.send "hello there #{res.message.user.id}"
 
+  robot.router.get '/almostthere', (req, res) ->
+    url = ['https:/',req.headers.host,'sms/receive'].join('/')
+    res.send "Last step: configure your Twilio to callback to Concierge using #{url}"
+
   robot.router.post '/sms/receive', (req, res) ->
     message = req.body
 

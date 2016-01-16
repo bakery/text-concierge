@@ -9,5 +9,6 @@
     "TELEGRAM_TOKEN": {
       "description": "Head to https://telegram.me/botfather and use /newbot command to create a new bot. Grab the token that Botfather generates for you and paste it here."
     }
-  }
+  },
+  "success_url": "/almostthere"
 }
